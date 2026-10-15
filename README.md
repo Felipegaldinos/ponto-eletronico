@@ -1,29 +1,33 @@
-## Sistema de Ponto Eletrônico
+# Registro de Ponto em Python
 
-Este é um simples sistema de ponto eletrônico desenvolvido em Python. Ele permite registrar entradas e saídas de funcionários e visualizar os registros salvos.
+Aplicação de terminal para registrar nome e data/hora e consultar marcações em arquivo de texto.
 
-# Funcionalidades
+## Recursos
 
-- **Registrar Entrada/Saída**: Adiciona o nome do funcionário e a data/hora no registro de ponto.
-- **Visualizar Registros**: Mostra todos os registros de entrada e saída já salvos.
-- **Salvar Registros**: Os registros são armazenados no arquivo `ponto.txt` para persistência de dados.
+Menu de registro e visualização; persistência em ponto.txt no diretório de execução.
 
-# Funcionalidades do Arquivo ponto.txt
+## Tecnologias
 
-O arquivo ponto.txt é criado automaticamente na primeira execução do programa.
+Python 3 e biblioteca padrão.
 
-Ele armazenará os registros no formato:
+## Executar localmente
 
-Nome do Funcionário - DD/MM/AAAA HH:MM:SS
+Instale Python 3 e corrija a condição de inicialização descrita abaixo. Depois:
 
+```sh
+git clone https://github.com/Felipegaldinos/ponto-eletronico.git
+cd ponto-eletronico
+python ponto.py
+```
 
-# Melhorias Futuras
+## Onde começar no código
 
-Adicionar autenticação para os funcionários.
+- `ponto.py` — ponto de entrada para entender o projeto.
 
-Permitir exportar os registros em formato CSV.
+## Estado atual
 
-Implementar uma interface gráfica usando bibliotecas como tkinter.
+Há um erro de inicialização no arquivo atual: if _name_ == "_main_": deve ser if __name__ == "__main__":. Corrija essa linha para usar o menu. O programa não diferencia entrada de saída e não calcula jornada. A alteração deste PR é somente documentação.
 
-Adicionar relatórios de horas trabalhadas por funcionário.
+## Autoria
 
+[Felipe Galdino](https://github.com/Felipegaldinos). Consulte os arquivos do repositório para os termos de licença aplicáveis.
